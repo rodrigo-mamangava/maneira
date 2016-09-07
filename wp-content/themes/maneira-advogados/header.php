@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="//fast.fonts.net/jsapi/a6de48dd-097a-4db1-ad15-8f33a740f57a.js"></script>
 </head>
 
-<body id="<?php if( is_home() ){ 
+<body id="<?php if( is_front_page() ){ 
 					echo "index-page";
 				}else{
 					echo "";
@@ -44,61 +44,7 @@
 
 	    </div>
 	</div>
-	<div id="myModalEquipe" class="modal fade container-fluid" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content row">
-            	<div id="modal-wrapper">	
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-					<div class="equipe-membro">
-						<!-- <img src="image/foto-advogado.png" alt="advogado">	 -->
-						<?php if ( has_post_thumbnail() ) {
-								$img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
-								echo "<img class='img-responsive' src='$img[0]' />"; 
-							}else{
-								echo "<img src=''/>";
-							}
-						?>
-						
-						<div class="col-lg-offset-2 col-lg-5">
-							<div class="equipe-membro-info">
-								<span class="equipe-membro-cargo text-uppercase"><?php echo get_post_meta(get_the_ID(), 'cargo', true); ?></span>
-								<span class="equipe-membro-nome text-uppercase"><?php echo get_post_meta(get_the_ID(), 'membro', true); ?></span>
-								<span class="equipe-membro-email"><?php echo get_post_meta(get_the_ID(), 'email', true); ?></span>
-							</div>
-							
-						</div>
-
-						<div class="col-lg-offset-5 col-lg-4">
-							<ul class="nav nav-tabs text-uppercase">
-								<li class="active" content="biografia"><a>Biografia</a></li>
-							    <li content="formacao"><a>Formação</a></li>
-							    <li content="premios"><a>Prêmios</a></li>
-							    <li content="idiomas"><a>Idiomas</a></li>
-						  	</ul>
-						  	<div class="modal-tabs-content biografia">
-						  		<p><?php echo get_post_meta(get_the_ID(), 'biografia', true); ?></p>
-						  	</div>
-						  	<div class="modal-tabs-content formacao">
-						  		<p><?php echo get_post_meta(get_the_ID(), 'formacao', true); ?></p>
-						  	</div>
-						  	<div class="modal-tabs-content premios">
-						  		<p><?php echo get_post_meta(get_the_ID(), 'premios', true); ?></p>
-						  	</div>
-						  	<div class="modal-tabs-content idiomas">
-						  		<p><?php echo get_post_meta(get_the_ID(), 'idiomas', true); ?></p>
-						  	</div>
-					  	</div>
-					  							
-					</div>
-					
-            	</div>
-            </div>
-
-        </div>
-    </div>
+	
 	<div id="page-wraper" class="container-fluid">
 		<header>
 			<nav class="navbar navbar-default navbar-fixed-top">
@@ -111,7 +57,7 @@
 			        <span class="icon-bar"></span>
 			      </button>
 			      <a class="navbar-brand" href="<?php echo home_url(); ?>">
-			      	<img alt="Brand" src="<?php echo get_bloginfo('template_directory');?>/image/logo.png">
+			      	<img alt="Brand" src="<?php echo get_bloginfo('template_directory');?>/image/logo@2x.png" height="22.99px" width="247px">
 			      </a>
 			    </div>
 
@@ -123,7 +69,7 @@
 		                'container'         => 'div',
 		                'container_class'   => 'collapse navbar-collapse',
 		        		'container_id'      => 'nav-content',
-		                'menu_class'        => 'nav navbar-nav text-uppercase',
+		                'menu_class'        => 'nav navbar-nav text-uppercase navbar-left',
 		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 		                'walker'            => new wp_bootstrap_navwalker())
 		            );

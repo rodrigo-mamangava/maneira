@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="col-lg-5">
+<div class="col-xs-12 col-sm-5 col-md-5">
 	<aside>
 		<div class="page-title">
 			<span class="text-uppercase">

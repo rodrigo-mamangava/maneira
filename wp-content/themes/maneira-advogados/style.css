@@ -24,10 +24,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /*My Styles*/
 
+body{
+	text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+ 	font-family:'AvenirNextLTW01-Regular';
+/*	font-family:'AvenirNextLTW01-Italic';
+ 	font-family:'Avenir Next LT W01 Demi';
+ 	font-family:'AvenirNextLTW01-DemiIta';*/
+}
+
 /*Header*/
 
 h1, h2, h3, h4, h5{
 	letter-spacing: 0.05em;
+}
+
+h3{
+	font-family:'Avenir Next LT W01 Demi' !important;
+}
+
+b, strong{
+	font-weight: normal;
+	font-family: "Avenir Next LT W01 Demi";
+}
+
+a:focus, a:hover {
+    color: transparent;
+    text-decoration: none;
+}
+
+.invisible-div{
+	
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
 }
 
 header{
@@ -80,11 +111,16 @@ header .navbar-fixed-top{
 header .navbar-nav li a{
 	font-size: 1.08rem;
 	margin-top: 8px;
-    color: #5a5a5a !important;
+    color: #909090 !important;
+    letter-spacing: 0.2px;
 }
 
 header .navbar-header{
 	margin-right: 85px;
+}
+
+header .navbar-nav>li{
+	margin-top: 5px;
 }
 
 
@@ -99,17 +135,18 @@ header .navbar-header{
 #main-content #content-image #content-image-text{
 	height: 350px;
     width: 48.6%;
+    max-width: 695px;
     background-color: rgba(6, 91, 113, 0.95);
     padding: 50px 100px;
     position: absolute;
     top: 600px;
-    right: 155px;
+    right: 20%;
 }
 
 #main-content #content-image #content-image-text span{
 	color: white;
 	font-family:'Spectrum MT W01';
-	font-size: 2.4rem;
+	font-size: 2.7rem;
 }
 
 
@@ -135,9 +172,15 @@ header .navbar-header{
 #main-content .about-company .about-company-item p{
 	font-size: 2.4rem;
 	font-family:'Spectrum MT W01';
-	color: #737373;
+	color: #5a5a5a;
 	margin-top: 25px;
+	margin-bottom: 25px;
 	line-height: 1.2;
+}
+
+#main-content .about-company .about-company-item a{
+	color: #065b71;
+	font-family:'Avenir Next LT W01 Demi';
 }
 
 #main-content .about-company .about-company-item span{
@@ -155,6 +198,8 @@ header .navbar-header{
 	background-color: #EFEFEF;
 	/*padding: 0px 200px;*/
 }
+
+
 
 #main-content .publish-and-news{
 	max-width: 1200px;
@@ -184,11 +229,15 @@ header .navbar-header{
 }
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-content{
+	margin-top: 20px;
+}
+
+
+#main-content .publish-and-news .publish-and-news-item .publish-and-news-content a{
 	font-size: 2.8rem;
 	font-family:'Spectrum MT W01';
 	font-weight: bold;
 	color: #065b71;
-	margin-top: 20px;
 	line-height: 1.1;
 }
 
@@ -231,10 +280,20 @@ footer #footer-right .footer{
 
 footer #footer-right #footer-city{
 	font-weight: bold;
+	font-family:'Avenir Next LT W01 Demi';
 }
 
-footer #footer-right #footer-address, footer #footer-right #footer-phone{
+footer #footer-right #footer-phone{
 	font-size: 1.2rem;
+}
+
+footer #footer-right #footer-address{
+	font-family: Spectrum;
+	font-size: 1.7rem;
+}
+
+footer .footer-copyright{
+	font-family:'Avenir Next LT W01 Demi';
 }
 
 
@@ -243,6 +302,7 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 #main-content .main-content-wrapper{
 	max-width: 1200px;
 	margin: 0 auto;
+	min-height: 800px;
 }
 
 #main-content aside{
@@ -274,21 +334,22 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
     color: white;
     text-align: center;
     font-size: 2.0rem;
+    font-weight: bold;
     z-index: 2;
     position: absolute;
-    left: 60px;
+    left: 40px;
 }
 
 #main-content .page-resume{
 	width: 380px;
-	height: 180px;
-	padding: 35px 45px 0px 50px;
+	/*height: 180px;*/
+	padding: 50px 45px 50px 50px;
     background-color: #EFEFEF;
-    margin-top: 30px;
+    margin-top: 35px;
     z-index: 1;
     position: absolute;
     font-family:'Spectrum MT W01';
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 /*Equipe*/
@@ -320,20 +381,21 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 #main-content .content-equipe .equipe-membro-info .equipe-membro-cargo{
 	color: white;
 	font-weight: bold;
-	font-size: 1.8rem;
+	font-size: 1.0rem;
 }
 
 #main-content .content-equipe .equipe-membro-info .equipe-membro-nome{
 	color: white;
-	font-size: 2.6rem;
+	font-size: 2.8rem;
 	font-family:'Serlio LT W01';
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
 
 #main-content .content-equipe .equipe-membro-info .equipe-membro-email{
 	color: white;
 	margin-top: 10px;
 	font-family:'Spectrum MT W01';
+	font-size: 1.8rem;
 }
 
 #main-content .content-equipe .equipe-membro-mais-info{
@@ -350,8 +412,11 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	color: white;
 	background-color: #A3A3A3;
 	height: 50px;
-	padding: 18px 35px;
+	padding: 16px 35px;
 	font-weight: bold;
+	font-family:'Avenir Next LT W01 Demi';
+	letter-spacing: 0.2px;
+
 }
 
 #main-content .content-equipe .equipe-membro-mais-info #plus-sign{
@@ -413,21 +478,22 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	margin-top: 50px;
 }
 
-#main-content .publicacoes-selection{
+#main-content #publicacoes-selection{
 	margin-top: 80px;
 	display: inline-block;
 }
 
-#main-content .publicacoes-selection span{
-    padding: 10px 100px;
+#main-content #publicacoes-selection span{
+    padding: 10px 118px;
     border: 3px solid gray;
     display: inline-block;
     float: left;
     font-weight: bold;
     color: gray;
+    cursor: pointer;
 }
 
-#main-content .publicacoes-selection span.selected{
+#main-content #publicacoes-selection span.selected{
     background-color: gray;
     color: white;
 }
@@ -440,6 +506,12 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #636363;
+}
+
+#main-content .palestras .content-text-publicacoes-item span.publicacoes-date{
+	
+	position: absolute;
+	left: 30px;
 }
 
 #main-content .content-text-publicacoes-item h3.publicacoes-title{
@@ -498,7 +570,7 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 }
 
 #main-content .sidebar-noticias-single .sidebar-noticias-single-tag span{
-	margin-left: 30px;
+	margin-left: 0px;
 	margin-top: 20px;
 	color: gray;
 	display: table;
@@ -573,6 +645,24 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 
 /*Util*/
 
+nav ul li.active>a{
+	background-color: transparent !important;
+	color: #065b71 !important;
+}
+
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #065b71;
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: transparent; 
+}
+
 .navbar .divider-vertical {
     height: 50px;
     margin: 0 9px;
@@ -593,17 +683,26 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 
 #main-content aside .membro-equipe, #main-content aside .search-result-options{
 	position: absolute;
-    top: 100px;
+    top: 130px;
 }
 
 #main-content aside .membro-equipe span, #main-content aside .search-result-options span{
-	margin-left: 30px;
-	margin-top: 20px;
-	color: gray;
-	display: inherit;
-	font-family:'Serlio LT W01';
+	margin-left: 47px;
+    margin-top: 20px;
+    color: #5a5a5a;
+    display: inherit;
+    font-size: 1.8rem;
+    font-family: 'Serlio LT W01';
+    letter-spacing: 0.05em;
 
 }
+
+#main-content aside .membro-equipe span a{
+	color: #5a5a5a;
+    text-decoration: none;
+}
+
+    
 
 #main-content aside .search-result-options span.selected{
 	color: #065b71;
@@ -612,15 +711,25 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 
 #main-content aside .searchbox{
 	position: absolute;
-	top:45px;
-	left: 60px;
+	top:75px;
+	left: 40px;
 	z-index: 2;
+}
+
+#main-content #publicacoes-page aside .searchbox{
+	top:55px;
+	left: 40px;
+	z-index: 2;
+}
+
+#main-content #noticias-page aside .searchbox{
+	top:30px;
 }
 
 #main-content aside .searchbox input{
 	height: 50px;
 	width: 225px;
-    border: 3px solid gray;
+    border: 2px solid gray;
     display: inline-block;
     float: left;
 }
@@ -643,6 +752,22 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	text-align: center;
    	color: gray;
    	font-weight: bold;
+   	font-family:'Avenir Next LT W01 Demi';
+   	letter-spacing: 0.2px;
+   	font-size: 1.2rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input[type="text"]{
+    text-align: center;
+   	color: gray;
+   	font-weight: bold;
+   	font-family:'Avenir Next LT W01 Demi';
+   	letter-spacing: 0.2px;
+   	font-size: 1.8rem;
 }
 
 .modal-dialog {
@@ -659,7 +784,12 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
   box-shadow:none;
 }
 
-#myModalEquipe .modal-content {
+.myModalEquipe{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.myModalEquipe .modal-content {
   height: 100%;
   border-radius: 0;
   background-color: rgba(10, 10, 10, 0.88);
@@ -686,7 +816,11 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 
 
 .modal-content #modal-wrapper{
-	margin-top: 200px;
+	max-width: 1200px;
+	margin: 0 auto;
+   	position: relative;
+    top: 10%;
+
 }
 
 .modal-content #modal-wrapper #search{
@@ -709,67 +843,90 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
     opacity: 1; 
 }
 
-#myModalEquipe .modal-content .equipe-membro-info{
+.myModalEquipe .modal-content .equipe-membro-info{
 	padding: 50px 70px;
 	background-color: rgba(29,91,115,0.60);
-	position: absolute;
-    top: 300px;
-    left: 115px;
+    margin-top: -115px;
+    /*margin-left: 108px;*/
+    position: relative;
 }
 
-#myModalEquipe img{
-	position: absolute;
+.myModalEquipe .equipe-membro img{
+	/*position: absolute;
     top: 80px;
-    left: 240px;
+    left: 240px;*/
     width: 490px;
     height: 515px;
 }
 
-#myModalEquipe button{
-	position: absolute;
-	top: 75px;
-	right: 380px;
+.myModalEquipe .links{
+	margin-top: -105px;
 }
 
-#myModalEquipe .modal-content .equipe-membro-info span{
+.myModalEquipe .links .link-item{
+	height: 40px;
+}
+
+.myModalEquipe .links img{
+	/*display: inherit;
+	margin-top: 15px;*/
+}
+
+.myModalEquipe .links span{
+    color: white;
+    font-size: 2.0rem;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-family:'Spectrum MT W01';
+}
+
+.myModalEquipe button{
+	margin-right: 100px;
+	/*position: absolute;
+	top: 75px;
+	right: 380px;*/
+}
+
+.myModalEquipe .modal-content .equipe-membro-info span{
 	display: inherit;
 }
 
-#myModalEquipe .modal-content .equipe-membro-info .equipe-membro-cargo{
+.myModalEquipe .modal-content .equipe-membro-info .equipe-membro-cargo{
 	color: white;
 	font-weight: bold;
 	font-size: 1.5rem;
 }
 
-#myModalEquipe .modal-content .equipe-membro-info .equipe-membro-nome{
+.myModalEquipe .modal-content .equipe-membro-info .equipe-membro-nome{
 	color: white;
 	font-size: 2.6rem;
 	font-family:'Serlio LT W01';
 	margin-top: 10px;
 }
 
-#myModalEquipe .modal-content .equipe-membro-info .equipe-membro-email{
+.myModalEquipe .modal-content .equipe-membro-info .equipe-membro-email{
 	color: white;
 	margin-top: 10px;
 	font-family:'Spectrum MT W01';
+	font-size: 1.8rem;
 }
 
-#myModalEquipe .modal-content .equipe-membro-mais-info{
+.myModalEquipe .modal-content .equipe-membro-mais-info{
 	top: -30px;
 }
 
-#myModalEquipe .modal-content .equipe-membro-mais-info span{
+.myModalEquipe .modal-content .equipe-membro-mais-info span{
 	float: left;
 }
 
 .nav-tabs{
 	border-bottom: 0px;
-	margin-top: -100px;
-    margin-left: 0px;
+	margin-top: -560px;
+    /*margin-left: 0px;*/
 }
 
 .nav-tabs>li{
-	width: 25%;
+	width: 33.334%;
     text-align: center;
     font-weight: bold;
     color: #065b71;
@@ -782,6 +939,7 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	margin-right: 0px;
 	border: 0px;
 	cursor: pointer;
+	color: #065b71;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover{
@@ -794,7 +952,12 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 
 .modal-tabs-content{
 	height: 400px;
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
+    padding: 50px 40px 0px 40px;
+    color: #5a5a5a;
+    font-family: 'Spectrum MT W01';
+    font-size: 2.0rem;
+    overflow-y: auto;
 }
 
 
@@ -813,9 +976,629 @@ footer #footer-right #footer-address, footer #footer-right #footer-phone{
 	display: none;
 }
 
-.modal-tabs-content p{
-	padding: 50px 40px;
+.modal-tabs-content span{
+	/*padding: 50px 40px;*/
 	color: #737373;
 	font-family:'Spectrum MT W01';
 	font-size: 2.0rem;
 }
+
+/*MOBILE EQUIPE CONTENT*/
+
+.modal-content-mobile{
+	height: 100%;
+}
+
+.modal-content-mobile .equipe-membro-mobile-wrapper{
+   	padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    bottom: 0px;
+    top: 227px;
+}
+
+.modal-content-mobile .nav-tabs{
+    position: absolute;
+    top: 37px;
+    right: 0px;
+    left: 0px;
+}
+
+.modal-content-mobile .modal-tabs-content{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 68%;
+}
+
+.modal-content-mobile .nav-tabs>li{
+	font-size: 1.0rem;
+}
+
+.modal-content-mobile .links{
+	background-color: #065b71;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.myModalEquipe .modal-content-mobile .links span {
+    color: white;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: 'Spectrum MT W01';
+}
+
+.modal-content-mobile .links .link-item{
+    /*margin-top: 15px;*/
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+.modal-content-mobile .links .link-item img{
+    width: 13px;
+    height: 15px;
+}
+
+.modal-content-mobile .equipe-imagem-mobile{
+	background-position: center center;
+	background-size: cover;
+	height: 264px;
+}
+
+.modal-content-mobile .equipe-imagem-mobile .overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: rgba(0, 0, 0, .6);
+}
+
+.myModalEquipe .modal-content-mobile .equipe-membro-info{
+    position: absolute;
+    top: 165px;
+    left: 30px;
+    float: left;
+}
+
+.myModalEquipe .modal-content-mobile .equipe-membro-info span{
+    display: inherit;
+    line-height: 1;
+}
+
+.myModalEquipe .modal-content-mobile .equipe-membro-info .equipe-membro-cargo{
+	color: white;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+.myModalEquipe .modal-content-mobile .equipe-membro-info .equipe-membro-nome{
+	color: white;
+	font-size: 2.6rem;
+	font-family:'Serlio LT W01';
+	margin-top: 10px;
+}
+
+.myModalEquipe .modal-content-mobile .equipe-membro-info .equipe-membro-email{
+	color: white;
+	margin-top: 10px;
+	font-family:'Spectrum MT W01';
+	font-size: 1.8rem;
+}
+
+.myModalEquipe .modal-content-mobile button {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.no-member{
+	display: none;
+	margin-top: 180px;
+	margin-bottom: 180px;
+}
+
+.no-member span{
+	color: #065b71;
+	padding: 60px;
+	font-family:'Spectrum MT W01';
+	font-size: 2.6rem;
+}
+
+@media only screen and (max-width: 1200px)  {
+
+	
+	.navbar{
+		border-radius: 0;
+	}
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 0px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        background: white;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        /*margin-top: 7.5px;*/
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+   		font-family: "gesta",sans-serif;
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+    }
+
+    .navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret{
+    	margin: -24px 15px 0 0;
+    }
+
+    .navbar-brand>img{
+    	margin-left: 50px;
+    }
+
+  }
+
+@media only screen and (max-width: 1100px)  {
+
+  #main-content #content-image #content-image-text{
+    width: auto;
+    right: 45px;
+    left: 45px;
+  }
+
+ /* #main-content .content-equipe img{
+  	margin-left: 0px;
+  }*/
+
+  /*#main-content .content-equipe .equipe-membro-info{
+  	margin-top: 0px;
+  }*/
+
+  /*#main-content .content-equipe .equipe-membro-mais-info #more-info{
+		padding: 18px 25px;
+	}*/
+
+	.nav-tabs>li{
+		font-size: 1.2rem;
+	}
+
+}
+
+@media only screen and (max-width: 992px)  {
+	/*#main-content .content-equipe .equipe-membro-mais-info #more-info{
+		padding: 18px 28px;
+	}*/
+
+	/*.modal-tabs-content{
+		padding: 25px 30px 0px 30px;
+		height: 350px;
+	}*/
+
+	.nav-tabs{
+		margin-top: 0px;
+	}
+
+	.myModalEquipe .modal-content .equipe-membro-info{
+		margin-top: -110px;
+	}
+
+	.modal-content #modal-wrapper{
+		top: 5%;
+	}
+
+	.myModalEquipe .links{
+		margin-top: 0px;
+	}
+
+	.myModalEquipe .equipe-membro img{
+		height: auto;
+		width: auto;
+	}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+	footer #footer-left, footer #footer-right{
+		text-align: left;
+	}
+
+	footer #footer-right{
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+
+	#main-content .content-equipe-wrapper{
+		margin-top: 200px;
+	}
+
+	.myModalEquipe .equipe-membro img{
+		height: auto;
+		width: auto;
+	}
+
+	#main-content .content-equipe img{
+		margin-left: -70px;
+	}
+
+	#main-content aside .searchbox{
+		left: 65px;
+	}
+	.modal-content-mobile .modal-tabs-content{
+		/*height: 84%;*/
+	}
+
+	#main-content #content-image #content-image-text{
+	    width: auto;
+	    right: 16px;
+	    left: 35px;
+  	}
+
+  	#main-content .about-company .about-company-item{
+    	position: inherit;
+    	top: 150px;
+    	left: 1px;
+    	right: 1px;
+  	}
+
+  	.navbar-brand>img{
+  		margin-left: 16px;
+  	}
+
+  	header .navbar-header{
+  		margin-right: 16px;
+  	}
+
+  	.navbar-toggle{
+  		margin-top: 15px;
+  	}
+
+  	#main-content .noticias-single-all{
+		margin-bottom: 110px;
+	}
+
+	#main-content .publish-and-news-wrapper{
+		height: auto;
+		background-color: #EFEFEF;
+	}
+
+	#main-content #mobile-wrap{
+		height: 100%;
+		background-color: #EFEFEF;
+	}
+
+	#main-content .publish-and-news .publish-and-news-item{
+		margin-left: 1px;
+		margin-bottom: 80px;
+	}
+
+	#main-content #publicacoes-page aside .searchbox{
+		top: 190px;
+	}
+
+	#main-content #publicacoes-selection{
+		margin-top: 280px;
+	}
+
+	#main-content #publicacoes-selection span{
+		width: 100%;
+		padding: 10px 328px;
+	}
+
+	#main-content .content-text-publicacoes-item img{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#main-content .palestras .content-text-publicacoes-item span.publicacoes-date{
+		margin-left: 15px;
+	}
+
+	#main-content .about-company{
+		margin-bottom: 50px;
+	}
+
+	#main-content .content-text{
+		margin-top: 180px;
+	}
+
+	.modal-content-mobile .modal-tabs-content{
+	    height: 84%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	#main-content #content-image #content-image-text span{
+		font-size: 2.2rem;
+	}
+
+	#main-content #content-image #content-image-text{
+		padding: 50px 20px;
+		height: auto;
+		left: 16px;
+	}
+
+	#main-content .about-company .about-company-item h3{
+		font-size: 1.3rem;
+	}
+
+	#main-content .about-company .about-company-item p{
+		font-size: 1.8rem;
+	}
+
+	#main-content .about-company .about-company-item a{
+		font-size: 1.1rem;
+	}
+
+	#main-content .publish-and-news h3{
+		margin-left: 16px;
+	}
+
+	header .navbar-header{
+		margin-right: 16px;
+	}
+
+	#main-content aside .membro-equipe span, #main-content aside .search-result-options span{
+		margin-left: 5px;
+	}
+
+	.myModalEquipe .equipe-membro img{
+		width: 100%;
+		height: auto;
+	}
+
+	.myModalEquipe .modal-content .equipe-membro-info{
+		padding: 25px 70px;
+	}
+
+	.myModalEquipe .modal-content .equipe-membro-info{
+		margin-top: -75px;
+	}
+
+	.myModalEquipe .modal-content .equipe-membro-info .equipe-membro-cargo{
+		font-size: 1.2rem;
+	}
+
+	.myModalEquipe .modal-content .equipe-membro-info .equipe-membro-nome{
+		font-size: 1.6rem;
+	}
+
+	.modal-tabs-content{
+	    padding: 30px 16px 50px 16px;
+	}
+
+	.modal-content-mobile .modal-tabs-content{
+	    height: 84%;
+	}
+
+	#main-content .about-company{
+		margin-bottom: 30px;
+	}
+
+	#main-content .content-text{
+		margin-top: 160px;
+	}
+
+	footer #footer-left{
+		margin-left: 1px;
+		padding-right: 16px;
+	}
+
+	footer #footer-right{
+		margin-left: 1px;
+		padding-right: 25px;
+	}
+
+	.img-overlay{
+		position: relative;
+		max-width: 100%
+	}
+
+	.img-overlay .overlay{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+        height: 264px;
+	    background-color: rgba(0,0,0,0.2);
+	    z-index: 2;
+	    pointer-events: none;
+	}
+
+	.myModalEquipe .modal-content-mobile .equipe-membro-info{
+		z-index: 3;
+	}
+
+	#main-content .content-text-noticias{
+		margin: 150px 0px;
+	}
+
+	#main-content .publish-and-news-wrapper{
+		height: auto;
+		background-color: #EFEFEF;
+	}
+
+	#main-content #mobile-wrap{
+		height: 100%;
+		background-color: #EFEFEF;
+	}
+
+	#main-content .publish-and-news .publish-and-news-item{
+		margin-left: 1px;
+		margin-bottom: 80px;
+	}
+
+
+	#main-content #publicacoes-page aside .searchbox{
+		top: 190px;
+	}
+
+	#main-content #publicacoes-selection{
+		margin-top: 280px;
+	}
+
+	#main-content #publicacoes-selection span{
+		width: 100%;
+		padding: 10px 152px;
+	}
+
+	#main-content .content-text-publicacoes-item img{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 400px) {
+	#main-content .page-resume{
+		width: 350px;
+	}
+
+	footer #footer-left img{
+		width: 265px;
+	}
+
+	footer #footer-left{
+		/*padding-left: 0px;*/
+	}
+
+	footer #footer-right{
+		/*padding-left: 15px;*/
+	}
+
+	#main-content .content-equipe .equipe-membro-mais-info #more-info{
+		padding: 16px 20px;
+	    /*height: 35px;*/
+	}
+
+	header .navbar-header{
+		margin-right: 5px;
+	}
+
+	#main-content .content-equipe img{
+		margin-left: -60px;
+	}
+
+	.modal-content-mobile .modal-tabs-content{
+	    height: 75%;
+	}
+
+	#main-content aside .searchbox{
+		top: 110px;
+		left: 40px;
+	}
+
+	#main-content #noticias-page aside .searchbox{
+		top: 55px;
+		left: 40px;
+	}
+
+	#main-content .content-text{
+		margin-top: 220px;
+	}
+
+	#main-content .page-resume{
+		width: 330px;
+	}
+
+	#main-content #publicacoes-selection span{
+		width: 100%;
+		padding: 10px 132px;
+	}
+
+	#main-content .about-company{
+		margin-bottom: 100px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 320px) {
+	#main-content .page-resume{
+		width: 290px;
+	}
+
+	#main-content aside .searchbox{
+		top: 145px;
+    	left: 43px;
+	}
+
+	#main-content aside .searchbox input{
+		height: 35px;
+    	width: 200px;
+	}
+
+	#main-content aside .searchbox span{
+		height: 35px;
+    	width: 35px;
+    	padding: 10px;
+	}
+
+	#main-content .content-equipe img{
+		margin-left: -55px;
+	}
+
+	#main-content .content-equipe .equipe-membro-mais-info #more-info{
+		padding: 16px 5px;
+    	/*height: 25px;*/
+	}
+
+	/*#main-content .content-equipe .equipe-membro-mais-info #plus-sign{
+		height: 25px;
+    	padding: 5px;
+	}*/
+
+	#main-content .about-company{
+		margin-bottom: 75px;
+	}
+
+	
+	::-webkit-input-placeholder {
+	  	font-size: 1.2rem;
+	}
+}
+
+
+
+
+

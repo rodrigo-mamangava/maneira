@@ -14,9 +14,10 @@
 	<aside>
 		<div class="page-title">
 			<span class="text-uppercase">
-				<?php $post_type = get_queried_object();
+				<!-- <?php $post_type = get_queried_object();
 					echo $post_type->rewrite['slug'];
-				?>
+				?> -->
+				Publicações
 			</span>
 		</div>
 		<div class="page-resume">

@@ -150,3 +150,21 @@ require get_template_directory() . '/inc/jetpack.php';
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+
+
+
+function add_search_to_wp_menu($items, $args) {
+    if ('primary' === $args->theme_location) {
+        $items .= '<li>';
+        $items .= '<a '
+                . 'class="glyphicon glyphicon-search" '
+                . 'data-target="#myModal"'
+                . 'data-toggle="modal"'
+                . 'id="MainNavHelp" '
+                . '</a>';
+        $items .= '</li>';
+    }
+    return $items;
+}
+
+// add_filter('wp_nav_menu_items', 'add_search_to_wp_menu', 10, 2);

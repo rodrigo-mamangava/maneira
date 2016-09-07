@@ -1,10 +1,10 @@
 $( document ).ready( function() {
 	showContent();
 
-	$('.publicacoes-selection span').on('click',function(){
+	$('#publicacoes-selection span').on('click',function(){
 		if($(this).hasClass('selected'))
 			return;
-		$('.publicacoes-selection span').removeClass('selected');
+		$('#publicacoes-selection span').removeClass('selected');
 		$(this).addClass('selected');
 		showContent($(this).attr('page').trim());
 		// carregaPublicacoesContent($(this).attr('page').trim());

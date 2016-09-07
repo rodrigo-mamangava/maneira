@@ -54,6 +54,7 @@ function my_custom_posttypes() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 5,
+        'taxonomies'         => array('post_tag'),
         'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats' )
     );
 	register_post_type('noticias', $args);
@@ -89,7 +90,7 @@ function my_custom_posttypes() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 5,
-        'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats', 'custom-fields' )
+        'supports'           => array( 'title',  'thumbnail', 'post-formats', 'custom-fields' )
     );
     register_post_type('equipe', $args);
 
