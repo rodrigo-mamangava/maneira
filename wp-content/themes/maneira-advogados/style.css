@@ -611,6 +611,13 @@ footer .footer-copyright{
 	color: #737373;
 }
 
+#main-content .content-text-noticias-single p{
+	margin-top: 30px;
+	font-size: 2.0rem;
+	font-family:'Spectrum MT W01';
+	color: #737373;
+}
+
 #main-content .content-text-noticias-single span.noticias-single-author{
 	margin-top: 30px;
 	font-size: 1.5rem;
