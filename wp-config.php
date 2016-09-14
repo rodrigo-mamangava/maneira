@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * As configurações básicas do WordPress.
  *
  * Esse arquivo contém as seguintes configurações: configurações de MySQL, Prefixo de Tabelas,
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'altere cada chave para um frase única');
-define('SECURE_AUTH_KEY',  'altere cada chave para um frase única');
-define('LOGGED_IN_KEY',    'altere cada chave para um frase única');
-define('NONCE_KEY',        'altere cada chave para um frase única');
-define('AUTH_SALT',        'altere cada chave para um frase única');
-define('SECURE_AUTH_SALT', 'altere cada chave para um frase única');
-define('LOGGED_IN_SALT',   'altere cada chave para um frase única');
-define('NONCE_SALT',       'altere cada chave para um frase única');
+ define('AUTH_KEY',         'US_;]v-gw6BCd!?3Y2O8fzcZ+*Mpefq=9,EhA!yY~fwuO+Ni.++{Hsi?rijG2x[#');
+ define('SECURE_AUTH_KEY',  '^Zx|x-i!NvC]dU^]mAk_%sL&#wnBM5kni^9C<;DA%-3x0KAkx:[zLL!g-*yZQi!@');
+ define('LOGGED_IN_KEY',    '(SQN (ERSlY!2f+CD0&}l46CSx}#$~Ba^ZfM<5*9|%yn@+{-cz$H_qfIAZ1ag[W.');
+ define('NONCE_KEY',        'of#9*2;yGv|^]rb}6J([S80`St)f[*]lT#;/<`qa-*nc>Jbq^t9;RzI2X[j_UK-[');
+ define('AUTH_SALT',        'C7*o2jldb4W]~>jXH(kTQ?=i{E9<MO g<M[R.v_3B[0c%&BO-niOCSeXF|Vek qf');
+ define('SECURE_AUTH_SALT', '6 Ie7!:1J>@A//H%-^K$.jz1zt.8H}U,f)1gk;;p F|):i?Q]sdD&Up8H2irN)o3');
+ define('LOGGED_IN_SALT',   ' >CKc[h8LRb@fk,M<${yxY-iXD[I-DxkDldQ(_WR_?iSzw5RGF+|d%SRL_jP(U-V');
+ define('NONCE_SALT',       '@%]SSeYL?XZs34,XmH>(YM+5i~PnEQBFy`r+m>.#:NbkuPs1~4G[}yC2n,{aI(B+');
 
 /**#@-*/
 
@@ -76,6 +76,6 @@ define('WP_DEBUG', false);
 /** Caminho absoluto para o diretório WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
+
 /** Configura as variáveis do WordPress e arquivos inclusos. */
 require_once(ABSPATH . 'wp-settings.php');

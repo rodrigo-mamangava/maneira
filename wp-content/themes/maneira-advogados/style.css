@@ -31,6 +31,7 @@ body{
 /*	font-family:'AvenirNextLTW01-Italic';
  	font-family:'Avenir Next LT W01 Demi';
  	font-family:'AvenirNextLTW01-DemiIta';*/
+	font-size: 1.4rem;
 }
 
 /*Header*/
@@ -51,6 +52,21 @@ b, strong{
 a:focus, a:hover {
     color: transparent;
     text-decoration: none;
+}
+
+a.more-link {
+	font-weight: normal;
+	font-family: "Avenir Next LT W01 Demi";
+	text-transform: uppercase;
+	color: #065b71;
+}
+
+a.more-link:focus a.more-link:active {
+	color:inherit;
+}
+
+a.text-uppercase {
+	letter-spacing: 0.08em;
 }
 
 .invisible-div{
@@ -109,10 +125,9 @@ header .navbar-fixed-top{
 }
 
 header .navbar-nav li a{
-	font-size: 1.08rem;
 	margin-top: 8px;
     color: #1b1b1b !important;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
 }
 
 header .navbar-header{
@@ -133,7 +148,7 @@ header .navbar-nav>li{
 }
 
 #main-content #content-image #content-image-text{
-	height: 350px;
+		height: 350px;
     width: 48.6%;
     max-width: 695px;
     background-color: rgba(6, 91, 113, 0.95);
@@ -146,9 +161,9 @@ header .navbar-nav>li{
 #main-content #content-image #content-image-text span{
 	color: white;
 	font-family:'Spectrum MT W01';
-	font-size: 2.7rem;
+	font-size: 2.4rem;
+	line-height: 3.5rem;
 }
-
 
 #main-content .about-company{
 	height: 600px;
@@ -164,18 +179,18 @@ header .navbar-nav>li{
 }
 
 #main-content .about-company .about-company-item h3{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	color: #065b71;
 }
 
 #main-content .about-company .about-company-item p{
-	font-size: 2.4rem;
-	font-family:'Spectrum MT W01';
+	font-size: 2.1rem;
+	font-family: 'Spectrum MT W01';
 	color: #5a5a5a;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	line-height: 1.2;
+	line-height: 2.7rem;
 }
 
 #main-content .about-company .about-company-item a{
@@ -223,8 +238,9 @@ header .navbar-nav>li{
 }
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-date{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: bold;
+	letter-spacing: .04em;
 	color: #5a5a5a;
 }
 
@@ -235,17 +251,19 @@ header .navbar-nav>li{
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-content a{
 	font-size: 2.8rem;
-	font-family:'Spectrum MT W01';
-	color: #065b71;
+	font-family:'SpectrumMTW01-Semibold';
 	line-height: 1.1;
+	letter-spacing: -.03em;
+	color: #5a5a5a;
 }
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-author{
-	font-size: 2.2rem;
+	font-size: 1.2rem;
 	font-weight: bold;
-	font-family:'Serlio LT W01';
-	font-variant: small-caps;
-	color: #838383;
+	letter-spacing: .04em;
+	color: #5a5a5a;
+	text-transform: uppercase;
+	margin-top: 20px;
 }
 
 /*Footer*/
@@ -283,12 +301,11 @@ footer #footer-right #footer-city{
 }
 
 footer #footer-right #footer-phone{
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 footer #footer-right #footer-address{
-	font-family: Spectrum;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 footer .footer-copyright{
@@ -311,38 +328,42 @@ footer .footer-copyright{
 #main-content .content-text{
 	margin-top: 60px;
 	margin-bottom: 60px;
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+
 }
 
 #main-content .content-text h3{
 	margin-top: 50px;
-	font-size: 1.6rem;
-	font-weight: bold;
+	font-size: inherit;
 	color: #065b71;
+	line-height: inherit;
+	letter-spacing: 0;
 }
 
 #main-content .content-text p{
 	margin-top: 30px;
-	font-size: 2.2rem;
 	font-family:'Spectrum MT W01';
 	color: #434343;
 }
 
 #main-content .page-title{
 	padding: 15px 25px;
-    background-color: #065b71;
-    color: white;
-    text-align: center;
-    font-size: 2.0rem;
-    font-weight: bold;
-    z-index: 2;
-    position: absolute;
-    left: 40px;
+	background-color: #065b71;
+	color: #fff;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	z-index: 2;
+	position: absolute;
+	left: 40px;
+	letter-spacing: .08em;
 }
 
 #main-content .page-resume{
 	width: 380px;
 	/*height: 180px;*/
-	padding: 50px 45px 50px 50px;
+	padding: 40px 45px 60px 50px;
     background-color: #EFEFEF;
     margin-top: 35px;
     z-index: 1;
@@ -439,14 +460,17 @@ footer .footer-copyright{
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #636363;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
 
 #main-content .content-text-noticias-item h3.noticias-title{
 	/*margin-top: 50px;*/
-	font-size: 2.6rem;
-	font-weight: bold;
+	font-size: 2.7rem;
 	font-family:'Spectrum MT W01';
 	color: #065b71;
+	letter-spacing: 0;
+	margin-bottom: 20px;
 }
 
 #main-content .content-text-noticias-item p.noticias-content{
@@ -505,6 +529,8 @@ footer .footer-copyright{
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #636363;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
 
 #main-content .palestras .content-text-publicacoes-item span.publicacoes-date{
@@ -517,8 +543,8 @@ footer .footer-copyright{
 	/*margin-top: 50px;*/
 	font-size: 2.8rem;
 	font-family:'Spectrum MT W01';
-	font-weight: bold;
 	color: #065b71;
+	letter-spacing: 0;
 }
 
 #main-content .content-text-publicacoes-item p.publicacoes-content{
@@ -548,6 +574,8 @@ footer .footer-copyright{
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #636363;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
 
 #main-content .sidebar-noticias-single .sidebar-noticias-single-author{
@@ -591,8 +619,8 @@ footer .footer-copyright{
 	/*margin-top: 50px;*/
 	font-size: 5.0rem;
 	font-family:'Spectrum MT W01';
-	font-weight: bold;
 	color: #065b71;
+	letter-spacing: -0.03em;
 }
 
 #main-content .content-text-noticias-single span.noticias-single-subtitle{
@@ -600,22 +628,27 @@ footer .footer-copyright{
 	font-size: 2.0rem;
 	font-family:'Spectrum MT W01';
 	font-weight: 400;
-	color: #707070;
+	color: #5a5a5a;
 }
 
 #main-content .content-text-noticias-single p.noticias-single-content{
 	margin-top: 30px;
-	font-size: 2.0rem;
+	font-size: 2.4rem;
 	font-family:'Spectrum MT W01';
-	color: #737373;
+	color: #5a5a5a;
 }
 
 #main-content .content-text-noticias-single p{
 	margin-top: 30px;
-	font-size: 2.0rem;
+	font-size: 2.2rem;
 	font-family:'Spectrum MT W01';
-	color: #737373;
+	color: #5a5a5a;
 }
+
+#main-content .content-text-noticias-single p strong, #main-content .content-text-noticias-single p b{
+	font-family:'SpectrumMTW01-Semibold';
+}
+
 
 #main-content .content-text-noticias-single span.noticias-single-author{
 	margin-top: 30px;
