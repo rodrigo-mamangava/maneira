@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5{
 }
 
 h3{
-	font-family:'Avenir Next LT W01 Demi' !important;
+	font-family:'Avenir Next LT W01 Demi';
 }
 
 b, strong{
@@ -54,7 +54,7 @@ a:focus, a:hover {
 }
 
 .invisible-div{
-	
+
     height: 100%;
     width: 100%;
     position: absolute;
@@ -111,7 +111,7 @@ header .navbar-fixed-top{
 header .navbar-nav li a{
 	font-size: 1.08rem;
 	margin-top: 8px;
-    color: #909090 !important;
+    color: #1b1b1b !important;
     letter-spacing: 0.2px;
 }
 
@@ -236,7 +236,6 @@ header .navbar-nav>li{
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-content a{
 	font-size: 2.8rem;
 	font-family:'Spectrum MT W01';
-	font-weight: bold;
 	color: #065b71;
 	line-height: 1.1;
 }
@@ -509,7 +508,7 @@ footer .footer-copyright{
 }
 
 #main-content .palestras .content-text-publicacoes-item span.publicacoes-date{
-	
+
 	position: absolute;
 	left: 30px;
 }
@@ -667,7 +666,7 @@ nav ul li.active>a{
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 .navbar .divider-vertical {
@@ -709,7 +708,7 @@ nav ul li.active>a{
     text-decoration: none;
 }
 
-    
+
 
 #main-content aside .search-result-options span.selected{
 	color: #065b71;
@@ -847,7 +846,7 @@ input[type="text"]{
     font-size: 21px;
     font-weight: 700;
     color: white;
-    opacity: 1; 
+    opacity: 1;
 }
 
 .myModalEquipe .modal-content .equipe-membro-info{
@@ -1120,7 +1119,7 @@ input[type="text"]{
 
 @media only screen and (max-width: 1200px)  {
 
-	
+
 	.navbar{
 		border-radius: 0;
 	}
@@ -1492,7 +1491,7 @@ input[type="text"]{
 		margin-right: 0px;
 	}
 
-	
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -1599,13 +1598,8 @@ input[type="text"]{
 		margin-bottom: 75px;
 	}
 
-	
+
 	::-webkit-input-placeholder {
 	  	font-size: 1.2rem;
 	}
 }
-
-
-
-
-
