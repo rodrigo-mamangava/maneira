@@ -127,7 +127,7 @@ header .navbar-fixed-top{
 header .navbar-nav li a{
 	margin-top: 8px;
     color: #1b1b1b !important;
-    letter-spacing: 0.5px;
+    /*letter-spacing: 0.5px;*/
 }
 
 header .navbar-header{
@@ -540,11 +540,20 @@ footer .footer-copyright{
 }
 
 #main-content .content-text-publicacoes-item h3.publicacoes-title{
-	/*margin-top: 50px;*/
+	/*margin-top: 0px;*/
 	font-size: 2.8rem;
 	font-family:'Spectrum MT W01';
 	color: #065b71;
 	letter-spacing: 0;
+}
+
+/*Here*/
+#main-content .content-text-publicacoes-item h3.publicacoes-palestras-title{
+	font-size: 2.8rem;
+	font-family:'Spectrum MT W01';
+	color: #065b71;
+	letter-spacing: 0;
+	margin-top: 0px;
 }
 
 #main-content .content-text-publicacoes-item p.publicacoes-content{
@@ -558,6 +567,153 @@ footer .footer-copyright{
 	margin-top: 30px;
 	font-size: 1.8rem;
 	font-family:'Serlio LT W01';
+	color: #939393;
+}
+
+.mini-video iframe{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/*Here*/
+/*Publicações Artigos Single*/
+
+#main-content aside.sidebar-publicacoes-single{
+	padding-left: 100px;
+	margin-top: 100px;
+}
+
+#main-content .sidebar-publicacoes-single span.publicacoes-date{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #636363;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+#main-content .sidebar-publicacoes-single .sidebar-publicacoes-single-author{
+	padding: 50px 0px 50 80px;
+    border-top: 1px solid #BBBBBB;
+    border-bottom: 1px solid #BBBBBB;
+    margin-top: 30px;
+}
+
+
+#main-content .sidebar-noticias-publicacoes .sidebar-noticias-publicacoes-author span{
+	font-size: 1.6rem;
+	font-family:'Serlio LT W01';
+	color: #BBBBBB;
+}
+
+
+#main-content .content-text-publicacoes-single{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#main-content .content-text-publicacoes-single h3.publicacoes-single-title{
+	/*margin-top: 50px;*/
+	font-size: 5.0rem;
+	font-family:'Spectrum MT W01';
+	color: #065b71;
+	letter-spacing: -0.03em;
+}
+
+#main-content .content-text-publicacoes-single span.publicacoes-single-subtitle{
+	margin-top: 30px;
+	font-size: 2.0rem;
+	font-family:'Spectrum MT W01';
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+#main-content .content-text-publicacoes-single p.publicacoes-single-content{
+	margin-top: 30px;
+	font-size: 2.4rem;
+	font-family:'Spectrum MT W01';
+	color: #5a5a5a;
+}
+
+#main-content .content-text-publicacoes-single p{
+	margin-top: 30px;
+	font-size: 2.2rem;
+	font-family:'Spectrum MT W01';
+	color: #5a5a5a;
+}
+
+#main-content .content-text-publicacoes-single p strong, #main-content .content-text-publicacoes-single p b{
+	font-family:'SpectrumMTW01-Semibold';
+}
+
+
+#main-content .content-text-publicacoes-single span.publicacoes-single-author{
+	margin-top: 30px;
+	font-size: 1.5rem;
+	color: #939393;
+}
+
+#main-content .publicacoes-single-all{
+	margin-bottom: 50px;
+}
+
+
+#main-content .publicacoes-single-all #all-news{
+	color: white;
+	background-color: #A3A3A3;
+	height: 50px;
+	padding: 18px 35px;
+	font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+#main-content .publicacoes-single-all #left-arrow{
+    background-color: gray;
+    height: 50px;
+    padding: 18px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}
+
+
+/*Here*/
+/*Publicações Palestras Single*/
+
+
+
+.single-publicacoes-palestras-wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.single-publicacoes-palestras-wrapper iframe{
+	display: block;
+	margin: 100px auto;
+}
+
+#main-content .content-text-publicacoes-single h3.publicacoes-palestras-single-title{
+	font-size: 5.0rem;
+	font-family:'Spectrum MT W01';
+	color: #065b71;
+	letter-spacing: -0.03em;
+	text-align: center;
+}
+
+#main-content .content-text-publicacoes-single span.publicacoes-palestras-single-subtitle{
+	margin-top: 30px;
+	font-size: 2.0rem;
+	font-family:'Spectrum MT W01';
+	font-weight: 400;
+	color: #5a5a5a;
+	text-align: center;
+	display: block;
+}
+
+#main-content .content-text-publicacoes-single span.publicacoes-palestras-single-author{
+	margin-top: 30px;
+	font-size: 1.5rem;
 	color: #939393;
 }
 
@@ -1146,6 +1302,19 @@ input[type="text"]{
 .no-member span{
 	color: #065b71;
 	padding: 60px;
+	font-family:'Spectrum MT W01';
+	font-size: 2.6rem;
+}
+
+.no-publish{
+	display: none;
+	margin-top: 180px;
+	margin-bottom: 180px;
+}
+
+.no-publish span{
+	color: #065b71;
+	padding: 60px 120px;
 	font-family:'Spectrum MT W01';
 	font-size: 2.6rem;
 }

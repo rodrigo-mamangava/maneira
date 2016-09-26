@@ -26,6 +26,9 @@ get_header(); ?>
 					
 				</div>
 				<div class="content-text-publicacoes">
+					<div class="no-publish">
+						<span>Nenhuma publicação encontrada</span>
+					</div>
 					<div class="artigos"><?php get_template_part( 'template-parts/content', 'artigos' ); ?></div>
 					<div class="palestras"><?php get_template_part( 'template-parts/content', 'palestras' ); ?></div>
 				</div>

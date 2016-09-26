@@ -128,7 +128,9 @@ get_header(); ?>
 															</a>
 														</div>
 														<div class="link-item">
-															<a target="_blank" href="<?php echo get_field('artigos'); ?>">
+															<a href="<?php echo get_post_type_archive_link( 'publicacoes' ); 
+																		echo '#';
+																		echo the_title(); ?>">
 																<img src="<?php echo get_bloginfo('template_directory');?>/image/artigo.png" alt="artigo">
 																<span>Artigos</span>
 															</a>
@@ -211,7 +213,9 @@ get_header(); ?>
 															</a>
 														</div>
 														<div class="link-item col-xs-4">
-															<a target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'artigos', true); ?>">
+															<a target="_blank" href="<?php echo get_post_type_archive_link( 'publicacoes' ); 
+																		echo '#';
+																		echo the_title(); ?>">
 																<img src="<?php echo get_bloginfo('template_directory');?>/image/artigo.png" alt="artigo">
 																<span>Artigos</span>
 															</a>

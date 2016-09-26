@@ -25,11 +25,11 @@
 		<div class="content-text-publicacoes-item">
 			<span class="publicacoes-date"><?php the_date(); ?></span>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img class="img-responsive" src="<?php echo get_bloginfo('template_directory');?>/image/palestra-example.png" alt="palestra-img">
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><div class="mini-video"><?php the_content(); ?></div></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<h3 class="publicacoes-title"><?php the_title(); ?></h3>
-				<p class="publicacoes-content"><?php the_content(); ?></p>
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><h3 class="publicacoes-palestras-title"><?php the_title(); ?></h3></a>
+				<p class="publicacoes-content"><?php echo get_field('subtitulo');; ?></p>
 				<span class="text-uppercase publicacoes-author"><?php echo get_the_author(); ?></span>		
 			</div>
 		</div>
