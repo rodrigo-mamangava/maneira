@@ -20,7 +20,7 @@ get_header(); ?>
 
 						while ( have_posts() ) : the_post(); ?>
 							<div class="content-text-noticias-item">
-								<h3>Notícias</h3>
+								<h5>Notícias</h5>
 								<span class="noticias-date"><?php echo get_the_date(); ?></span>
 								<a href="<?php the_permalink(); ?>" rel="bookmark"><h3 class="noticias-title"><?php the_title(); ?></h3></a>
 							</div>

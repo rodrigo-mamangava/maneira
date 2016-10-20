@@ -448,6 +448,12 @@ footer .footer-copyright{
 
 /*Noticias*/
 
+#noticias-page h5 {
+	text-transform: uppercase;
+	color: #065b71;
+	letter-spacing: .01em;
+}
+
 #main-content .content-text-noticias{
 	margin: 50px 0px;
 }
