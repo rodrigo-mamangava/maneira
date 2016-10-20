@@ -22,7 +22,7 @@
 		</div>
 		<div class="page-resume">
 			<span>
-				O Maneira Advogados é formado por uma ampla equipe de especialistas com atuação no contencioso, administrativo e judicial, e na consultoria, estruturando operações e propondo soluções jurídicas cotidianas.
+				O Maneira Advogados é formado por uma ampla equipe de especialistas com atuação no contencioso e na consultoria nas áreas tributária, cível e empresarial.
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>
@@ -45,8 +45,8 @@
 				if( $my_query->have_posts() ) {
 				  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				    <span class="text-uppercase">
-				    	<a href="#myModalEquipe-<?php echo get_the_ID();?>" 
-				    	   data-target="#myModalEquipe-<?php echo get_the_ID();?>" 
+				    	<a href="#myModalEquipe-<?php echo get_the_ID();?>"
+				    	   data-target="#myModalEquipe-<?php echo get_the_ID();?>"
 				    	   data-toggle="modal"><?php the_title(); ?>
 				    	</a>
 				    </span>
@@ -54,8 +54,8 @@
 					wp_reset_query();  // Restore global post data stomped by the_post().
 			?>
 
-			
-					
+
+
 		</div>
 	</aside>
 </div>
