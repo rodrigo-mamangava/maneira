@@ -22,7 +22,7 @@
 		</div>
 		<div class="page-resume">
 			<span>
-				O Maneira advogados reúne profissionais qualificados, que se formaram e atuam	nas instituições de ensino mais conceitudas.
+				O Maneira Advogados é formado por uma ampla equipe de especialistas com atuação no contencioso, administrativo e judicial, e na consultoria, estruturando operações e propondo soluções jurídicas cotidianas.
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>

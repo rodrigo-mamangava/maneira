@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="about-company-item">
 					<h3 class="text-uppercase">Quem somos</h3>
 					<?php echo get_field('quem_somos'); ?>
-					<a class="text-uppercase" href="#">Saiba Mais</a>
+					<a class="text-uppercase" href="http://maneira.adv.br/institucional/">Saiba Mais</a>
 				</div>
 			</div>
 			<div class="hidden-xs col-sm-1 col-md-1 col-lg-1"></div>

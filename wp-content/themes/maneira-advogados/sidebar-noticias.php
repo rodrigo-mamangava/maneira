@@ -27,7 +27,7 @@
 			<?php if( !is_page() ) { ?>
 				<div class="searchbox">
 					<input type="text" placeholder="PESQUISAR NOTÍCIAS"></input>
-					<span class="glyphicon glyphicon-search white"></span>
+					<span class="glyphicon glyphicon-search white" id="search-noticias"></span>
 				</div>
 			<?php } ?>
 	</aside>

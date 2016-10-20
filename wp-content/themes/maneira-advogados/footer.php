@@ -25,6 +25,12 @@
 							<div id="footer-address">Av. Rio Branco 103, 5º andar Centro.</div>
 							<div id="footer-phone">Tel: +55 21 2222-9008</div>
 						</div>
+<div class="footer footer-branchs row">
+							<div id="footer-city" class="text-uppercase">São Paulo</div>
+							<div id="footer-address">Rua Oscar Freire, n. 379, conj. 131 <br />Jardim Paulistano – São Paulo/SP – CEP: 01426-900
+							</div>
+							<div id="footer-phone">Tel: +55 21 2222-9008</div>
+						</div>
 						<div class="footer footer-branchs row">
 							<div id="footer-city" class="text-uppercase">Brasília</div>
 							<div id="footer-address">SHS, Quadra 6, Conj. A, Bl. A, Sala 304. <br> Ed. Brasil XXI - Asa Sul.</div>
