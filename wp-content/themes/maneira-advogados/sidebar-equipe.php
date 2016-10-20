@@ -22,7 +22,7 @@
 		</div>
 		<div class="page-resume">
 			<span>
-				O Maneira Advogados é formado por uma ampla equipe de especialistas com atuação no contencioso e na consultoria nas áreas tributária, cível e empresarial.
+				O Maneira Advogados é formado por uma ampla equipe de especialistas com atuação no contencioso e na consultoria, notadamente nas áreas tributária, cível e empresarial.
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>

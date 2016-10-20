@@ -21,7 +21,7 @@
 		</div>
 		<div class="page-resume">
 			<span>
-				Notícia sobre o escritório e direito tributário, judicial e administrativo
+				Acompanhe as principais informações do escritório e do Direito Tributário, Civil e Empresarial.
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>

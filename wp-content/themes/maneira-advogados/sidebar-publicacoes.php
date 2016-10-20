@@ -22,7 +22,7 @@
 		</div>
 		<div class="page-resume">
 			<span>
-				Os Profisionais do Maneira Advogados possuem intensa e destacada produção acadêmica.
+				Os profissionais do Maneira Advogados possuem extensa e destacada produção científica sobre os temas mais atuais.
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>
