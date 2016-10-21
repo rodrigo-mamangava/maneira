@@ -10,6 +10,8 @@ $( document ).ready( function() {
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-noticias.png")')
 	}else if(page.indexOf('publicacoes') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-publicacoes.png")')
+	}else if(page.indexOf('contato') != -1){
+		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-publicacoes.png")')
 	}else if(page.indexOf('search-page') != -1){
 		$("#content-image").css("background-image",'url("image/background-busca.jpg")')
 	}
