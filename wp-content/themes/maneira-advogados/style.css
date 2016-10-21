@@ -373,6 +373,7 @@ footer .footer-copyright{
     position: absolute;
     font-family:'Spectrum MT W01';
     font-size: 2.0rem;
+		line-height: 2.4rem;
 }
 
 /*Equipe*/
