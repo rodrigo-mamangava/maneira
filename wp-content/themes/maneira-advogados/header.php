@@ -21,12 +21,12 @@
 	<script type="text/javascript" src="//fast.fonts.net/jsapi/a6de48dd-097a-4db1-ad15-8f33a740f57a.js"></script>
 </head>
 
-<body id="<?php if( is_front_page() ){ 
+<body id="<?php if( is_front_page() ){
 					echo "index-page";
 				}else{
 					echo "";
 				};
-			?>" 
+			?>"
 		<?php body_class(); ?>
 	>
 	<div id="myModal" class="modal fade container-fluid" role="dialog">
@@ -34,7 +34,7 @@
 
 	        <!-- Modal content-->
 	        <div class="modal-content row">
-	        	<div id="modal-wrapper" class="col-lg-offset-2 col-lg-8">	
+	        	<div id="modal-wrapper" class="col-lg-offset-2 col-lg-8">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<i id="search" class="glyphicon glyphicon-search white"></i>
 					<a href="search-page.html"><i id="right-arrow" class="glyphicon glyphicon-arrow-right white"></i></a>
@@ -44,11 +44,11 @@
 
 	    </div>
 	</div>
-	
+
 	<div id="page-wraper" class="container-fluid">
 		<header>
 			<nav class="navbar navbar-default navbar-fixed-top">
-		 
+
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
@@ -57,7 +57,7 @@
 			        <span class="icon-bar"></span>
 			      </button>
 			      <a class="navbar-brand" href="<?php echo home_url(); ?>">
-			      	<img alt="Brand" src="<?php echo get_bloginfo('template_directory');?>/image/logo@2x.png" height="22.99px" width="247px">
+			      	<img alt="Brand" src="<?php echo get_bloginfo('template_directory');?>/image/logo@2x.png" height="auto" width="280px">
 			      </a>
 			    </div>
 
