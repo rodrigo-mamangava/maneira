@@ -58,6 +58,7 @@ get_header(); ?>
 							<span class="publicacoes-palestras-single-subtitle">
 								<em><?php echo get_field('subtitulo'); ?></em>
 							</span>
+							<?php echo get_field('texto'); ?>
 							
 						</div>
 						<div class="row">

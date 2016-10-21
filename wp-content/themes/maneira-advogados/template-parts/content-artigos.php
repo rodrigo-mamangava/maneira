@@ -26,7 +26,7 @@
 		<div class="content-text-publicacoes-item">
 			<span class="publicacoes-date"><?php the_date(); ?></span>
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><h3 class="publicacoes-title"><?php the_title(); ?></h3></a>
-			<span class="text-uppercase publicacoes-author">Por <?php echo get_the_author(); ?></span>
+			<span class="text-uppercase publicacoes-author">Por <?php echo get_field('autor'); ?></span>
 		</div>
 	<?php endwhile;
 ?>

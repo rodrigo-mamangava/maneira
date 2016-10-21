@@ -70,8 +70,8 @@ function my_custom_posttypes() {
         'new_item'           => 'Novo Membro de Equipe',
         'edit_item'          => 'Editar Membro de Equipe',
         'view_item'          => 'Visualizar Membro de Equipe',
-        'all_items'          => 'Todos os Membro de Equipes',
-        'search_items'       => 'Procurar Membro de Equipes',
+        'all_items'          => 'Todos os Membros da Equipe',
+        'search_items'       => 'Procurar Membro da Equipe',
         'parent_item_colon'  => 'Parent Membro de Equipe:',
         'not_found'          => 'Nenhum Membro encontrado.',
         'not_found_in_trash' => 'Nenhum Membro encontrado na lixeira.',
@@ -105,10 +105,10 @@ function my_custom_posttypes() {
         'new_item'           => 'Nova Publicação',
         'edit_item'          => 'Editar Publicação',
         'view_item'          => 'Visualizar Publicação',
-        'all_items'          => 'Todos as Publicações',
+        'all_items'          => 'Todas as Publicações',
         'search_items'       => 'Procurar Publicações',
         'parent_item_colon'  => 'Parent Publicação:',
-        'not_found'          => 'Nenhuma Publicação encontrado.',
+        'not_found'          => 'Nenhuma Publicação encontrada.',
         'not_found_in_trash' => 'Nenhuma Publicação encontrada na lixeira.',
     );
     

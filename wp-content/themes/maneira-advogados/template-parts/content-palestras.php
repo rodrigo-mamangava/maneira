@@ -30,51 +30,9 @@
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><h3 class="publicacoes-palestras-title"><?php the_title(); ?></h3></a>
 				<p class="publicacoes-content"><?php echo get_field('subtitulo');; ?></p>
-				<span class="text-uppercase publicacoes-author"><?php echo get_the_author(); ?></span>		
+				<span class="text-uppercase publicacoes-author"><?php echo get_field('autor'); ?></span>		
 			</div>
 		</div>
 	<?php endwhile; 
 ?>
 
-<!-- <div class="content-text-publicacoes-item">
-	<span class="publicacoes-date">07 de Junho, 2016</span>
-	<div class="row">
-		<div class="col-lg-6">
-			<img src="<?php echo get_bloginfo('template_directory');?>/image/palestra-example.png" alt="palestra-img">
-		</div>
-		<div class="col-lg-6">
-			<h3 class="publicacoes-title">Excelencia em advogacia tributária</h3>
-			<p class="publicacoes-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
-			<span class="text-uppercase publicacoes-author">André Mendes Moreira</span>		
-		</div>
-	</div>
-</div>
-<div class="content-text-publicacoes-item">
-	<span class="publicacoes-date">07 de Junho, 2016</span>
-	<div class="row">
-		<div class="col-lg-6">
-			<img src="<?php echo get_bloginfo('template_directory');?>/image/palestra-example.png" alt="palestra-img">
-		</div>
-		<div class="col-lg-6">
-			<h3 class="publicacoes-title">Excelencia em advogacia tributária</h3>
-			<p class="publicacoes-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
-			<span class="text-uppercase publicacoes-author">André Mendes Moreira</span>		
-		</div>
-	</div>
-</div>
-<div class="content-text-publicacoes-item">
-	<span class="publicacoes-date">07 de Junho, 2016</span>
-	<div class="row">
-		<div class="col-lg-6">
-			<img src="<?php echo get_bloginfo('template_directory');?>/image/palestra-example.png" alt="palestra-img">
-		</div>
-		<div class="col-lg-6">
-			<h3 class="publicacoes-title">Excelencia em advogacia tributária</h3>
-			<p class="publicacoes-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
-			<span class="text-uppercase publicacoes-author">André Mendes Moreira</span>		
-		</div>
-	</div>
-</div> -->
