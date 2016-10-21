@@ -5,7 +5,7 @@ $( document ).ready( function() {
 	}else if(page.indexOf('atuacao') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-atuacao.jpg")')
 	}else if(page.indexOf('equipe') != -1){
-		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-equipe-b.png")')
+		$("#content-image").css("background-image",'url("/wp-content/uploads/2016/07/background-equipe-b.jpg")')
 	}else if(page.indexOf('noticias') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-noticias.png")')
 	}else if(page.indexOf('publicacoes') != -1){

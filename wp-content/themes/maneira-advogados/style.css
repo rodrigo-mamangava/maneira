@@ -1456,6 +1456,7 @@ input[type="text"]{
 
 .wpcf7-form input, .wpcf7-form textarea {
 	width: 350px;
+	text-align: left;
 }
 .wpcf7-submit {
 	text-transform: uppercase;
