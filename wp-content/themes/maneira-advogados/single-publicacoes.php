@@ -32,7 +32,7 @@ get_header(); ?>
 							<em><?php echo get_field('subtitulo'); ?></em>
 						</span>
 						<p class="publicacoes-single-content"><?php the_content();?></p>
-						<span class="text-uppercase publicacoes-single-author"><?php echo get_the_author(); ?></span>
+						<span class="text-uppercase publicacoes-single-author"><?php echo get_field('autor'); ?></span>
 					</div>
 					<div class="row">
 						<div class="col-lg-7 publicacoes-single-all">
