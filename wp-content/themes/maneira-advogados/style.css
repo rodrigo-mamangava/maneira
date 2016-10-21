@@ -1461,7 +1461,7 @@ input[type="text"]{
 	text-transform: uppercase;
 	width: 350px;
 	background-color: #065b71;
-	padding: 15px 0gi;
+	padding: 15px 0;
 }
 @media only screen and (max-width: 768px) {
 	footer #footer-left, footer #footer-right{
