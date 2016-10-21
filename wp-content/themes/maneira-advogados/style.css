@@ -1452,6 +1452,17 @@ input[type="text"]{
 
 }
 
+/*Contato*/
+
+.wpcf7-form input, .wpcf7-form textarea {
+	width: 350px;
+}
+.wpcf7-submit {
+	text-transform: uppercase;
+	width: 350px;
+	background-color: #065b71;
+	padding: 15px 0;
+}
 @media only screen and (max-width: 768px) {
 	footer #footer-left, footer #footer-right{
 		text-align: left;
