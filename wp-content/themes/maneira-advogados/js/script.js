@@ -5,7 +5,7 @@ $( document ).ready( function() {
 	}else if(page.indexOf('atuacao') != -1){
 		$("#content-image").css("background-image",'url("/wp-ma/wp-content/themes/maneira-advogados/image/background-atuacao.jpg")')
 	}else if(page.indexOf('equipe') != -1){
-		$("#content-image").css("background-image",'url("/wp-ma/wp-content/themes/maneira-advogados/image/background-equipe.png")')
+		$("#content-image").css("background-image",'url("/wp-ma/wp-content/themes/maneira-advogados/image/background-equipe-b.png")')
 	}else if(page.indexOf('noticias') != -1){
 		$("#content-image").css("background-image",'url("/wp-ma/wp-content/themes/maneira-advogados/image/background-noticias.png")')
 	}else if(page.indexOf('publicacoes') != -1){
@@ -41,7 +41,7 @@ $( document ).ready( function() {
 		$('.equipe-membro-mobile-wrapper ul li').not('[content="biografia"]').removeClass('active');
 	});
 
-	$(window).on('hidden.bs.modal', function() { 
+	$(window).on('hidden.bs.modal', function() {
 		$('.modal-tabs-content.formacao').hide()
 		// $('.modal-tabs-content.premios').hide()
         $('.modal-tabs-content.idiomas').hide()
@@ -69,7 +69,7 @@ $( document ).ready( function() {
 		if(membrosDaEquipe.length == membrosNaoEncontrados){
 			$('.no-member').show(400);
 		}
-		
+
 	})
 
 	$('.searchbox input').on('change', function(){
@@ -85,10 +85,10 @@ $( document ).ready( function() {
 	})
 
 
-	
+
 
 	function changeContent(content){
-		
+
 		switch(content){
 			case 'biografia':
 				$('.modal-tabs-content.formacao').hide()
@@ -117,11 +117,8 @@ $( document ).ready( function() {
 		        $('.modal-tabs-content.premios').hide()
 		        $('.modal-tabs-content.idiomas').hide()
 		        $('.modal-tabs-content.idiomas').show()
-		        break;			
+		        break;
 		}
 	}
 
 });
-
-
-
