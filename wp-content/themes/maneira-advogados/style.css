@@ -241,7 +241,7 @@ header .navbar-nav>li{
 	font-size: 1.2rem;
 	font-weight: bold;
 	letter-spacing: .04em;
-	color: #5a5a5a;
+	color: #065b71;
 }
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-content{
@@ -254,7 +254,11 @@ header .navbar-nav>li{
 	font-family:'SpectrumMTW01-Semibold';
 	line-height: 1.1;
 	letter-spacing: -.03em;
-	color: #5a5a5a;
+	color: #065b71;
+}
+
+#main-content .publish-and-news .publish-and-news-item .publish-and-news-content a:hover{
+	color:#054556;
 }
 
 #main-content .publish-and-news .publish-and-news-item .publish-and-news-author{
