@@ -46,7 +46,7 @@ get_header(); ?>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mobile-wrap">
 					<h3 class="text-uppercase">Notícias e Publicações</h3>
 					<div class="row">
-						<?php 
+						<?php
 							$type = 'noticias';
 							$args=array(
 								'post_type' => $type,
@@ -65,13 +65,10 @@ get_header(); ?>
 										<div class="publish-and-news-content">
 											<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></p></a><p>
 										</div>
-										<div class="publish-and-news-author">
-											<span><?php echo get_the_author(); ?></span>
-										</div>
 									</div>
 								</div>
-							
-								
+
+
 							<?php endwhile; else: ?>
 
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center; margin-top: 50px;">
@@ -80,11 +77,11 @@ get_header(); ?>
 
 						 	<?php endif; ?>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
-	</div> 
-	
+	</div>
+
 
 <?php
 // get_sidebar();
