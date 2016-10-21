@@ -11,7 +11,7 @@ $( document ).ready( function() {
 	}else if(page.indexOf('publicacoes') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-publicacoes.png")')
 	}else if(page.indexOf('contato') != -1){
-		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-publicacoes.png")')
+		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-contato.jpg")')
 	}else if(page.indexOf('search-page') != -1){
 		$("#content-image").css("background-image",'url("image/background-busca.jpg")')
 	}
