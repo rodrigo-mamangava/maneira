@@ -34,7 +34,7 @@
 						<div class="footer footer-branchs row">
 							<div id="footer-city" class="text-uppercase">Brasília</div>
 							<div id="footer-address">SHS, Quadra 6, Conj. A, Bl. A, Sala 304. <br> Ed. Brasil XXI - Asa Sul.</div>
-							<div id="footer-phone">Tel: +55 30 2121-0982</div>
+							<div id="footer-phone">Tel: +55 61 3224-2627</div>
 						</div>
 						<div class="footer footer-copyright text-uppercase row">
 							2016 - Todos os direitos reservados
