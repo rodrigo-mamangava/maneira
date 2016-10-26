@@ -32,6 +32,7 @@ body{
  	font-family:'Avenir Next LT W01 Demi';
  	font-family:'AvenirNextLTW01-DemiIta';*/
 	font-size: 1.4rem;
+	padding-top: 60px;
 }
 
 /*Header*/
@@ -1331,7 +1332,6 @@ input[type="text"]{
 }
 
 @media only screen and (max-width: 1200px)  {
-
 
 	.navbar{
 		border-radius: 0;
