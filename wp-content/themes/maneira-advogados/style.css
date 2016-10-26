@@ -1061,7 +1061,7 @@ input[type="text"]{
     top: 80px;
     left: 240px;*/
     width: 490px;
-    height: 515px;
+    height: auto;
 }
 
 .myModalEquipe .links{
