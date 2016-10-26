@@ -1107,6 +1107,7 @@ input[type="text"]{
 	font-size: 2.6rem;
 	font-family:'Serlio LT W01';
 	margin-top: 10px;
+	line-height: 1em;
 }
 
 .myModalEquipe .modal-content .equipe-membro-info .equipe-membro-email{
