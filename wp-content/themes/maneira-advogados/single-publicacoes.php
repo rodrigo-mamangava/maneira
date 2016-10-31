@@ -19,11 +19,11 @@ get_header(); ?>
 				<aside class="sidebar-publicacoes-single text-uppercase">
 					<span class="publicacoes-date"><?php echo get_the_date();?></span>
 					<div class="sidebar-publicacoes-single-author">
-						<span><?php get_the_author(); ?></span>
+						<span><?php echo get_field('autor'); ?></span>
 					</div>
 				</aside>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-sm-6 col-lg-5">
 				<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
 					<div class="content-text-publicacoes-single">
@@ -50,7 +50,7 @@ get_header(); ?>
 				<div class="col-sm-12 col-md-12 col-lg-12">
 					<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post();?> 
-						<div class="single-publicações-video">
+						<div class="single-publicações-video single-mini-video">
 							<?php the_content();?>
 						</div>
 						<div class="content-text-publicacoes-single">
