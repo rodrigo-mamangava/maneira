@@ -19,7 +19,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="main-content-wrapper">
 			<?php get_sidebar() ?>
-			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+			<div class="col-xs-12 col-sm-7 col-md-5 col-lg-5">
 				<div class="content-text">
 
 					<?php 

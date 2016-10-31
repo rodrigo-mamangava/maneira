@@ -11,7 +11,7 @@
 
 <?php 
 
-//MONTAR QUERY TRAZENDO APENAS CONTEUDO DE CATEGORIA ARTIGOS DO POST TYPE PUBLICACOES
+//MONTAR QUERY TRAZENDO APENAS CONTEUDO DE CATEGORIA PALESTRAS DO POST TYPE PUBLICACOES
 	$type = 'publicacoes';
 	$cat_id = get_cat_ID('palestras');
 	$args=array(
@@ -23,7 +23,7 @@
 	$query = new WP_Query($args);
 	while ( $query->have_posts() ) : $query->the_post(); ?>
 		<div class="content-text-publicacoes-item">
-			<span class="publicacoes-date"><?php the_date(); ?></span>
+			<!-- <span class="publicacoes-date"><?php the_date(); ?></span> -->
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><div class="mini-video"><?php the_content(); ?></div></a>
 			</div>
@@ -33,6 +33,7 @@
 				<span class="text-uppercase publicacoes-author"><?php echo get_field('autor'); ?></span>		
 			</div>
 		</div>
+		<div class="clearfix"></div>
 	<?php endwhile; 
 ?>
 

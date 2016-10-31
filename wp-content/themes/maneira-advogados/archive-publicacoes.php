@@ -14,7 +14,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="main-content-wrapper" id="publicacoes-page">	
 			<?php get_sidebar('publicacoes') ?>
-			<div class="col-lg-6">
+			<div class="col-md-6 col-lg-6">
 				<div class="row" id="publicacoes-selection">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="artigos">
 						<span class="text-uppercase selected" id="publicacoes-artigos" page="artigos">Artigos</span>

@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="col-lg-5">
+<div class="col-md-5 col-lg-5">
 	<aside>
 		<div class="page-title">
 			<span class="text-uppercase">
@@ -26,10 +26,22 @@
 			</span>
 		</div>
 			<?php if( !is_page() ) { ?>
+				<!-- <form role="search" method="get" id="searchform"
+				    class="searchbox" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				    <div>
+				        <label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+				        <input type="text" placeholder="PESQUISAR PUBLICAÇÕES" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+				        <input type="submit" id="searchsubmit"
+				            class="glyphicon glyphicon-search white" value="<?php echo esc_attr_x( '', 'submit button' ); ?>" />
+				        <input type="hidden" name="post_type" value="publicacoes" />
+				    </div>
+				</form> -->
 				<div class="searchbox">
 					<input type="text" placeholder="PESQUISAR PUBLICAÇÕES"></input>
 					<span class="glyphicon glyphicon-search white" id="search-publicacao"></span>
 				</div>
 			<?php } ?>
+
+
 	</aside>
 </div>

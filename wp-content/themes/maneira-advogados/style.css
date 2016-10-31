@@ -276,7 +276,7 @@ header .navbar-nav>li{
 footer{
 	background-color: #065b71;
 	color: white;
-	height: 400px;
+	min-height: 400px;
 }
 
 footer .footer-wrapper{
@@ -315,6 +315,7 @@ footer #footer-right #footer-address{
 
 footer .footer-copyright{
 	font-family:'Avenir Next LT W01 Demi';
+	margin-bottom: 30px;
 }
 
 
@@ -421,6 +422,7 @@ footer .footer-copyright{
 	margin-top: 10px;
 	font-family:'Spectrum MT W01';
 	font-size: 1.8rem;
+	word-wrap: break-word;
 }
 
 #main-content .content-equipe .equipe-membro-mais-info{
@@ -460,7 +462,7 @@ footer .footer-copyright{
 }
 
 #main-content .content-text-noticias{
-	margin: 50px 0px;
+	margin: 100px 0px;
 }
 
 #main-content .content-text-noticias-item{
@@ -587,6 +589,11 @@ footer .footer-copyright{
 	height: auto;
 }
 
+.single-mini-video iframe{
+	display: block;
+	max-width: 100%;
+}
+
 /*Here*/
 /*Publicações Artigos Single*/
 
@@ -665,7 +672,7 @@ footer .footer-copyright{
 }
 
 #main-content .publicacoes-single-all{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 
@@ -1066,7 +1073,7 @@ input[type="text"]{
 }
 
 .myModalEquipe .links{
-	margin-top: -105px;
+	margin-top: -75px;
 }
 
 .myModalEquipe .links .link-item{
@@ -1128,7 +1135,7 @@ input[type="text"]{
 
 .nav-tabs{
 	border-bottom: 0px;
-	margin-top: -560px;
+	margin-top: -520px;
     /*margin-left: 0px;*/
 }
 
@@ -1494,7 +1501,7 @@ input[type="text"]{
 	}
 
 	#main-content aside .searchbox{
-		left: 65px;
+		left: 45px;
 	}
 	.modal-content-mobile .modal-tabs-content{
 		/*height: 84%;*/
@@ -1554,7 +1561,7 @@ input[type="text"]{
 
 	#main-content #publicacoes-selection span{
 		width: 100%;
-		padding: 10px 328px;
+		padding: 10px 148px;
 	}
 
 	#main-content .content-text-publicacoes-item img{
@@ -1567,7 +1574,7 @@ input[type="text"]{
 	}
 
 	#main-content .about-company{
-		margin-bottom: 50px;
+		margin-bottom: 220px;
 	}
 
 	#main-content .content-text{
@@ -1576,6 +1583,33 @@ input[type="text"]{
 
 	.modal-content-mobile .modal-tabs-content{
 	    height: 84%;
+	}
+
+	#main-content .publicacoes-single-all{
+		margin-bottom: 100px;
+	}
+
+	#main-content .content-equipe .equipe-membro-mais-info #more-info{
+	    height: 45px;
+    	padding: 16px 14px;
+    	font-size: 1.1rem;
+	}
+
+	#main-content .content-equipe .equipe-membro-mais-info #plus-sign{
+		padding: 15px;
+		height: 45px;
+	}
+
+	#publicacoes-selection #artigos{
+		padding-right: 0px;
+	}
+
+	#publicacoes-selection #palestras{
+		padding-left: 0px;
+	}
+
+	#main-content aside.sidebar-publicacoes-single{
+		padding-left: 50px;
 	}
 }
 
@@ -1644,8 +1678,9 @@ input[type="text"]{
 	    height: 84%;
 	}
 
-	#main-content .about-company{
-		margin-bottom: 30px;
+	#main-content .about-company{    
+		margin-bottom: 300px;
+    	margin-top: 30px;
 	}
 
 	#main-content .content-text{
@@ -1720,7 +1755,24 @@ input[type="text"]{
 		margin-right: 0px;
 	}
 
+	#main-content .content-equipe .equipe-membro-mais-info #more-info{
+	    height: 50px;
+    	padding: 16px 35px;
+        font-size: 1.4rem;
+	}
 
+	#main-content .content-equipe .equipe-membro-mais-info #plus-sign{
+		padding: 18px;
+		height: 50px;
+	}
+
+	#publicacoes-selection #artigos{
+		padding-right: 15px;
+	}
+
+	#publicacoes-selection #palestras{
+		padding-left: 15px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -1767,6 +1819,10 @@ input[type="text"]{
 		left: 40px;
 	}
 
+	#main-content #equipe-page aside .searchbox{
+		top: 135px;
+	}
+
 	#main-content .content-text{
 		margin-top: 220px;
 	}
@@ -1781,7 +1837,9 @@ input[type="text"]{
 	}
 
 	#main-content .about-company{
-		margin-bottom: 100px;
+		height: 700px;
+		margin-bottom: 280px;
+		margin-top: 100px;
 	}
 
 }
@@ -1796,6 +1854,15 @@ input[type="text"]{
 	#main-content aside .searchbox{
 		top: 145px;
     	left: 43px;
+	}
+
+	#main-content #equipe-page aside .searchbox{
+		top: 165px;
+    	left: 43px;
+	}
+
+	#main-content #publicacoes-page aside .searchbox{
+		top: 260px;
 	}
 
 	#main-content aside .searchbox input{
@@ -1824,11 +1891,34 @@ input[type="text"]{
 	}*/
 
 	#main-content .about-company{
-		margin-bottom: 75px;
+		margin-bottom: 310px;
+		margin-top: 135px;
 	}
 
 
 	::-webkit-input-placeholder {
 	  	font-size: 1.2rem;
 	}
+
+	#main-content .content-equipe-wrapper{
+		margin-top: 230px;
+	}
+
+	#main-content #publicacoes-selection span{
+		width: 99%;
+    	padding: 10px 106px;
+	}
+
+	#main-content #publicacoes-selection{
+		margin-top: 320px;
+	}
+
 }
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+	max-height: 500px !important;
+}
+
+
+
+

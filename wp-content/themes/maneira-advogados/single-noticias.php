@@ -33,10 +33,7 @@ get_header(); ?>
 				?>
   				
 				
-				<!-- <span class="text-uppercase">Ganho de Capital</span>
-				<span class="text-uppercase">irpf</span>
-				<span class="text-uppercase">Imposto de Renda</span>
-				<span class="text-uppercase">Integralização Capital Social</span> -->
+				
 			</div>
 
 		</aside>
@@ -83,7 +80,7 @@ get_header(); ?>
 							$query = new WP_Query($args);
 							if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-								<div class="col-lg-offset-1 col-lg-3">
+								<div class="col-sm-4 col-lg-offset-1 col-lg-3">
 									<div class="publish-and-news-item">
 										<div class="publish-and-news-date">
 											<span class="text-uppercase"><?php echo get_the_date(); ?></span>
