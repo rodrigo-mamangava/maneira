@@ -129,6 +129,78 @@ function my_custom_posttypes() {
         'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats', 'custom-fields' )
     );
     register_post_type('publicacoes', $args);
+
+    //Artigos Post Type
+    $labels = array(
+        'name'               => 'Artigos',
+        'singular_name'      => 'Artigos',
+        'menu_name'          => 'Artigos',
+        'name_admin_bar'     => 'Artigos',
+        'add_new'            => 'Postar Artigo',
+        'add_new_item'       => 'Postar novo Artigo',
+        'new_item'           => 'Novo Artigo',
+        'edit_item'          => 'Editar Artigo',
+        'view_item'          => 'Visualizar Artigo',
+        'all_items'          => 'Todos os Artigos',
+        'search_items'       => 'Procurar Artigos',
+        'parent_item_colon'  => 'Parent Artigo:',
+        'not_found'          => 'Nenhum Artigo encontrado.',
+        'not_found_in_trash' => 'Nenhum Artigo encontrado na lixeira.',
+    );
+    
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'menu_icon'          => 'dashicons-format-aside',
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'artigos' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'taxonomies'         => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats', 'custom-fields' )
+    );
+    register_post_type('artigos', $args);
+
+    //Palestras Post Type
+    $labels = array(
+        'name'               => 'Palestras',
+        'singular_name'      => 'Palestras',
+        'menu_name'          => 'Palestras',
+        'name_admin_bar'     => 'Palestras',
+        'add_new'            => 'Postar Palestra',
+        'add_new_item'       => 'Postar nova Palestra',
+        'new_item'           => 'Nova Palestra',
+        'edit_item'          => 'Editar Palestra',
+        'view_item'          => 'Visualizar Palestra',
+        'all_items'          => 'Todas as Palestras',
+        'search_items'       => 'Procurar Palestras',
+        'parent_item_colon'  => 'Parent Palestra:',
+        'not_found'          => 'Nenhuma Palestra encontrada.',
+        'not_found_in_trash' => 'Nenhuma Palestra encontrada na lixeira.',
+    );
+    
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'menu_icon'          => 'dashicons-format-video',
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'palestras' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'taxonomies'         => array('post_tag'),
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats', 'custom-fields' )
+    );
+    register_post_type('palestras', $args);
 }
 
 add_action('init', 'my_custom_posttypes');

@@ -1338,6 +1338,19 @@ input[type="text"]{
 	font-size: 2.6rem;
 }
 
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+	max-height: 500px !important;
+}
+
+#back-to-publish{
+	color: white;
+	width: auto !important;
+}
+
+.search-content{
+	margin-top: 150px;
+}
+
 @media only screen and (max-width: 1200px)  {
 
 	.navbar{
@@ -1610,6 +1623,18 @@ input[type="text"]{
 
 	#main-content aside.sidebar-publicacoes-single{
 		padding-left: 50px;
+	}
+
+	.search-content{
+		margin-top: 250px;
+	}
+
+	#main-content #content-image{
+		height: 300px !important;
+	}
+
+	#main-content #content-image #content-image-text{
+		top: 90px;
 	}
 }
 
@@ -1913,11 +1938,12 @@ input[type="text"]{
 		margin-top: 320px;
 	}
 
+	.search-content{
+		margin-top: 325px;
+	}
+
 }
 
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
-	max-height: 500px !important;
-}
 
 
 

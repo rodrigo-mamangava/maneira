@@ -10,7 +10,7 @@ $( document ).ready( function() {
 		$("#content-image").css("background-image",'url("/wp-content/uploads/2016/07/background-equipe-b.jpg")')
 	}else if(page.indexOf('noticias') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-noticias.png")')
-	}else if(page.indexOf('publicacoes') != -1){
+	}else if(page.indexOf('artigos') != -1 || page.indexOf('palestras') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-publicacoes.png")')
 	}else if(page.indexOf('contato') != -1){
 		$("#content-image").css("background-image",'url("/wp-content/themes/maneira-advogados/image/background-contato.jpg")')
@@ -175,6 +175,13 @@ $( document ).ready( function() {
 			$('.no-member').hide(400);
 		}
 	})
+
+	// Search submit event
+	var spanSubmit = $('#search-publicacao');
+	spanSubmit.on('click', function() {
+		console.log('teste');
+        $(this).closest('form').submit();
+    });
 
 
 
